@@ -12,7 +12,7 @@ builder.Services.AddLogging(loggingBuilder =>
 {
     
     loggingBuilder.ClearProviders();    
-    loggingBuilder.AddNLog("E:\\Project\\LogSandard\\MISA.LogStandard\\MISA.LogStandard.Sample\\bin\\Debug\\net8.0\\Config\\nlog.config");
+    loggingBuilder.AddNLog("E:\\Project\\log-standard\\MISA.LogStandard\\MISA.LogStandard.Sample\\Config\\nlog.config");
 });
 
 //builder.Logging.AddNLog("Config/nlog.xml");

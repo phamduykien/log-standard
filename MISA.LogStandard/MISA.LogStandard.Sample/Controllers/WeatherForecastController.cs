@@ -22,7 +22,7 @@ namespace MISA.LogStandard.Sample.Controllers
         public IEnumerable<WeatherForecast> Get()
         {
             _logger.LogInformation($"Get weather forecast {DateTime.Now.ToLocalTime()}");
-
+            _logger.LogError("Error");
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
